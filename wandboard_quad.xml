@@ -74,24 +74,24 @@ I2C3_SDA	      GPIO_16 (R2)		i2c3.SDA (ALT6)	GPIO6 (T3)		i2c3.SDA (ALT2) (InputS
   </SignalDesign>
   <SignalDesign Name="ECSPI1_MISO" NativeInstance="ecspi1" Instance="ecspi1" InstanceAlias="ecspi1" IsChecked="true">
     <Comment />
-    <Routing padNet="padNet.KEY_COL1" mode="KEY_COL1_ALT0" ball="U7" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_KEY_COL1" Address="0x020E0200" Value="0x00000000" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_KEY_COL1" Address="0x020E05D0" Value="0x0001B0B0" />
-    <Register Name="IOMUXC_ECSPI1_MISO_SELECT_INPUT" Address="0x020E07F8" Value="0x00000002" />
+    <Routing padNet="padNet.EIM_DATA17" mode="EIM_DATA17_ALT1" ball="F21" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_DATA17" Address="0x020E0094" Value="0x00000001" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_DATA17" Address="0x020E03A8" Value="0x0001B0B0" />
+    <Register Name="IOMUXC_ECSPI1_MISO_SELECT_INPUT" Address="0x020E07F8" Value="0x00000000" />
   </SignalDesign>
   <SignalDesign Name="ECSPI1_MOSI" NativeInstance="ecspi1" Instance="ecspi1" InstanceAlias="ecspi1" IsChecked="true">
     <Comment />
-    <Routing padNet="padNet.KEY_ROW0" mode="KEY_ROW0_ALT0" ball="V6" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_KEY_ROW0" Address="0x020E01FC" Value="0x00000000" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_KEY_ROW0" Address="0x020E05CC" Value="0x0001B0B0" />
-    <Register Name="IOMUXC_ECSPI1_MOSI_SELECT_INPUT" Address="0x020E07FC" Value="0x00000002" />
+    <Routing padNet="padNet.EIM_DATA18" mode="EIM_DATA18_ALT1" ball="D24" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_DATA18" Address="0x020E0098" Value="0x00000001" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_DATA18" Address="0x020E03AC" Value="0x0001B0B0" />
+    <Register Name="IOMUXC_ECSPI1_MOSI_SELECT_INPUT" Address="0x020E07FC" Value="0x00000000" />
   </SignalDesign>
   <SignalDesign Name="ECSPI1_SCLK" NativeInstance="ecspi1" Instance="ecspi1" InstanceAlias="ecspi1" IsChecked="true">
     <Comment />
-    <Routing padNet="padNet.KEY_COL0" mode="KEY_COL0_ALT0" ball="W5" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_KEY_COL0" Address="0x020E01F8" Value="0x00000000" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_KEY_COL0" Address="0x020E05C8" Value="0x0001B0B0" />
-    <Register Name="IOMUXC_ECSPI1_CSPI_CLK_IN_SELECT_INPUT" Address="0x020E07F4" Value="0x00000002" />
+    <Routing padNet="padNet.EIM_DATA16" mode="EIM_DATA16_ALT1" ball="C25" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_DATA16" Address="0x020E0090" Value="0x00000001" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_DATA16" Address="0x020E03A4" Value="0x0001B0B0" />
+    <Register Name="IOMUXC_ECSPI1_CSPI_CLK_IN_SELECT_INPUT" Address="0x020E07F4" Value="0x00000000" />
   </SignalDesign>
   <SignalDesign Name="ECSPI1_SS0" NativeInstance="ecspi1" Instance="ecspi1" InstanceAlias="ecspi1" IsChecked="true">
     <Comment />
@@ -99,6 +99,57 @@ I2C3_SDA	      GPIO_16 (R2)		i2c3.SDA (ALT6)	GPIO6 (T3)		i2c3.SDA (ALT2) (InputS
     <Register Name="IOMUXC_SW_MUX_CTL_PAD_KEY_ROW1" Address="0x020E0204" Value="0x00000000" />
     <Register Name="IOMUXC_SW_PAD_CTL_PAD_KEY_ROW1" Address="0x020E05D4" Value="0x0001B0B0" />
     <Register Name="IOMUXC_ECSPI1_SS0_SELECT_INPUT" Address="0x020E0800" Value="0x00000002" />
+  </SignalDesign>
+  <SignalDesign Name="ECSPI2_MISO" NativeInstance="ecspi2" Instance="ecspi2" InstanceAlias="ecspi2" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.EIM_OE" mode="EIM_OE_ALT2" ball="J24" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_OE" Address="0x020E0100" Value="0x00000002" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_OE" Address="0x020E0414" Value="0x0000B0B1" />
+    <Register Name="IOMUXC_ECSPI2_MISO_SELECT_INPUT" Address="0x020E0814" Value="0x00000000" />
+  </SignalDesign>
+  <SignalDesign Name="ECSPI2_MOSI" NativeInstance="ecspi2" Instance="ecspi2" InstanceAlias="ecspi2" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.EIM_CS1" mode="EIM_CS1_ALT2" ball="J23" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_CS1" Address="0x020E00FC" Value="0x00000002" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_CS1" Address="0x020E0410" Value="0x0000B0B1" />
+    <Register Name="IOMUXC_ECSPI2_MOSI_SELECT_INPUT" Address="0x020E0818" Value="0x00000000" />
+  </SignalDesign>
+  <SignalDesign Name="ECSPI2_SCLK" NativeInstance="ecspi2" Instance="ecspi2" InstanceAlias="ecspi2" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.EIM_CS0" mode="EIM_CS0_ALT2" ball="H24" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_CS0" Address="0x020E00F8" Value="0x00000002" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_CS0" Address="0x020E040C" Value="0x0000B0B1" />
+    <Register Name="IOMUXC_ECSPI2_CSPI_CLK_IN_SELECT_INPUT" Address="0x020E0810" Value="0x00000000" />
+  </SignalDesign>
+  <SignalDesign Name="EIM_ADDR17" NativeInstance="eim" Instance="eim" InstanceAlias="eim" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.EIM_ADDR17" mode="EIM_ADDR17_ALT0" ball="G24" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_ADDR17" Address="0x020E00F0" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_ADDR17" Address="0x020E0404" Value="0x0000B0B1" />
+  </SignalDesign>
+  <SignalDesign Name="EIM_ADDR19" NativeInstance="eim" Instance="eim" InstanceAlias="eim" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.EIM_ADDR19" mode="EIM_ADDR19_ALT0" ball="G25" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_ADDR19" Address="0x020E00E8" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_ADDR19" Address="0x020E03FC" Value="0x0000B0B1" />
+  </SignalDesign>
+  <SignalDesign Name="EIM_ADDR20" NativeInstance="eim" Instance="eim" InstanceAlias="eim" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.EIM_ADDR20" mode="EIM_ADDR20_ALT0" ball="H22" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_ADDR20" Address="0x020E00E4" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_ADDR20" Address="0x020E03F8" Value="0x0000B0B1" />
+  </SignalDesign>
+  <SignalDesign Name="EIM_ADDR25" NativeInstance="eim" Instance="eim" InstanceAlias="eim" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.EIM_ADDR25" mode="EIM_ADDR25_ALT0" ball="H19" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_ADDR25" Address="0x020E0088" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_ADDR25" Address="0x020E039C" Value="0x0000B0B1" />
+  </SignalDesign>
+  <SignalDesign Name="EIM_EB2" NativeInstance="eim" Instance="eim" InstanceAlias="eim" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.EIM_EB2" mode="EIM_EB2_ALT0" ball="E22" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_EB2" Address="0x020E008C" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_EB2" Address="0x020E03A0" Value="0x0001B0B0" />
   </SignalDesign>
   <SignalDesign Name="ENET_MDC" NativeInstance="enet" Instance="enet" InstanceAlias="enet" IsChecked="true">
     <Comment />
@@ -288,60 +339,6 @@ I2C3_SDA	      GPIO_16 (R2)		i2c3.SDA (ALT6)	GPIO6 (T3)		i2c3.SDA (ALT2) (InputS
     <Register Name="IOMUXC_SW_MUX_CTL_PAD_ENET_TX_DATA0" Address="0x020E01F0" Value="0x00000005" />
     <Register Name="IOMUXC_SW_PAD_CTL_PAD_ENET_TX_DATA0" Address="0x020E0504" Value="0x0001B0B0" />
   </SignalDesign>
-  <SignalDesign Name="GPIO2_IO00" NativeInstance="gpio2" Instance="gpio2" InstanceAlias="gpio2" IsChecked="true">
-    <Comment>SD3_CD_B</Comment>
-    <Routing padNet="padNet.NAND_DATA00" mode="NAND_DATA00_ALT5" ball="A18" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_DATA00" Address="0x020E02FC" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_DATA00" Address="0x020E06E4" Value="0x0001B0B0" />
-  </SignalDesign>
-  <SignalDesign Name="GPIO2_IO01" NativeInstance="gpio2" Instance="gpio2" InstanceAlias="gpio2" IsChecked="true">
-    <Comment>SD3_WP</Comment>
-    <Routing padNet="padNet.NAND_DATA01" mode="NAND_DATA01_ALT5" ball="C17" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_DATA01" Address="0x020E0300" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_DATA01" Address="0x020E06E8" Value="0x0001B0B0" />
-  </SignalDesign>
-  <SignalDesign Name="GPIO2_IO02" NativeInstance="gpio2" Instance="gpio2" InstanceAlias="gpio2" IsChecked="true">
-    <Comment>SD2_CD_B</Comment>
-    <Routing padNet="padNet.NAND_DATA02" mode="NAND_DATA02_ALT5" ball="F16" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_DATA02" Address="0x020E0304" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_DATA02" Address="0x020E06EC" Value="0x0001B0B0" />
-  </SignalDesign>
-  <SignalDesign Name="GPIO2_IO03" NativeInstance="gpio2" Instance="gpio2" InstanceAlias="gpio2" IsChecked="true">
-    <Comment>SD2_WP</Comment>
-    <Routing padNet="padNet.NAND_DATA03" mode="NAND_DATA03_ALT5" ball="D17" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_DATA03" Address="0x020E0308" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_DATA03" Address="0x020E06F0" Value="0x0001B0B0" />
-  </SignalDesign>
-  <SignalDesign Name="GPIO2_IO18" NativeInstance="gpio2" Instance="gpio2" InstanceAlias="gpio2" IsChecked="true">
-    <Comment>EPDC_PWRCTRL2</Comment>
-    <Routing padNet="padNet.EIM_ADDR20" mode="EIM_ADDR20_ALT5" ball="H22" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_ADDR20" Address="0x020E00E4" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_ADDR20" Address="0x020E03F8" Value="0x0000B0B1" />
-  </SignalDesign>
-  <SignalDesign Name="GPIO2_IO19" NativeInstance="gpio2" Instance="gpio2" InstanceAlias="gpio2" IsChecked="true">
-    <Comment>EPDC_PWRCTRL1</Comment>
-    <Routing padNet="padNet.EIM_ADDR19" mode="EIM_ADDR19_ALT5" ball="G25" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_ADDR19" Address="0x020E00E8" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_ADDR19" Address="0x020E03FC" Value="0x0000B0B1" />
-  </SignalDesign>
-  <SignalDesign Name="GPIO2_IO21" NativeInstance="gpio2" Instance="gpio2" InstanceAlias="gpio2" IsChecked="true">
-    <Comment>E_PMIC_GOOD_B</Comment>
-    <Routing padNet="padNet.EIM_ADDR17" mode="EIM_ADDR17_ALT5" ball="G24" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_ADDR17" Address="0x020E00F0" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_ADDR17" Address="0x020E0404" Value="0x0000B0B1" />
-  </SignalDesign>
-  <SignalDesign Name="GPIO2_IO24" NativeInstance="gpio2" Instance="gpio2" InstanceAlias="gpio2" IsChecked="true">
-    <Comment>DOK_B</Comment>
-    <Routing padNet="padNet.EIM_CS1" mode="EIM_CS1_ALT5" ball="J23" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_CS1" Address="0x020E00FC" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_CS1" Address="0x020E0410" Value="0x0000B0B1" />
-  </SignalDesign>
-  <SignalDesign Name="GPIO2_IO25" NativeInstance="gpio2" Instance="gpio2" InstanceAlias="gpio2" IsChecked="true">
-    <Comment>EPDC_PWRIRQ</Comment>
-    <Routing padNet="padNet.EIM_OE" mode="EIM_OE_ALT5" ball="J24" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_OE" Address="0x020E0100" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_OE" Address="0x020E0414" Value="0x0000B0B1" />
-  </SignalDesign>
   <SignalDesign Name="GPIO3_IO06" NativeInstance="gpio3" Instance="gpio3" InstanceAlias="gpio3" IsChecked="true">
     <Comment>KP_LOCK</Comment>
     <Routing padNet="padNet.EIM_AD06" mode="EIM_AD06_ALT5" ball="K25" />
@@ -384,29 +381,11 @@ I2C3_SDA	      GPIO_16 (R2)		i2c3.SDA (ALT6)	GPIO6 (T3)		i2c3.SDA (ALT2) (InputS
     <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_AD15" Address="0x020E0150" Value="0x00000005" />
     <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_AD15" Address="0x020E0464" Value="0x0000B0B1" />
   </SignalDesign>
-  <SignalDesign Name="GPIO3_IO16" NativeInstance="gpio3" Instance="gpio3" InstanceAlias="gpio3" IsChecked="true">
-    <Comment>COMP_INT</Comment>
-    <Routing padNet="padNet.EIM_DATA16" mode="EIM_DATA16_ALT5" ball="C25" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_DATA16" Address="0x020E0090" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_DATA16" Address="0x020E03A4" Value="0x0001B0B0" />
-  </SignalDesign>
-  <SignalDesign Name="GPIO3_IO22" NativeInstance="gpio3" Instance="gpio3" InstanceAlias="gpio3" IsChecked="true">
-    <Comment>USB_OTG_PWR_EN</Comment>
-    <Routing padNet="padNet.EIM_DATA22" mode="EIM_DATA22_ALT5" ball="E23" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_DATA22" Address="0x020E00A8" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_DATA22" Address="0x020E03BC" Value="0x0001B0B0" />
-  </SignalDesign>
   <SignalDesign Name="GPIO3_IO26" NativeInstance="gpio3" Instance="gpio3" InstanceAlias="gpio3" IsChecked="true">
     <Comment>TS_INT</Comment>
     <Routing padNet="padNet.EIM_DATA26" mode="EIM_DATA26_ALT5" ball="E24" />
     <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_DATA26" Address="0x020E00BC" Value="0x00000005" />
     <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_DATA26" Address="0x020E03D0" Value="0x0001B0B0" />
-  </SignalDesign>
-  <SignalDesign Name="GPIO3_IO28" NativeInstance="gpio3" Instance="gpio3" InstanceAlias="gpio3" IsChecked="true">
-    <Comment>DISP0_RD</Comment>
-    <Routing padNet="padNet.EIM_DATA28" mode="EIM_DATA28_ALT5" ball="G23" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_DATA28" Address="0x020E00C4" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_DATA28" Address="0x020E03D8" Value="0x0001B0B0" />
   </SignalDesign>
   <SignalDesign Name="GPIO3_IO29" NativeInstance="gpio3" Instance="gpio3" InstanceAlias="gpio3" IsChecked="true">
     <Comment>PWR_OFF_REQ</Comment>
@@ -450,54 +429,6 @@ I2C3_SDA	      GPIO_16 (R2)		i2c3.SDA (ALT6)	GPIO6 (T3)		i2c3.SDA (ALT2) (InputS
     <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_WAIT" Address="0x020E0154" Value="0x00000005" />
     <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_WAIT" Address="0x020E0468" Value="0x0000B060" />
   </SignalDesign>
-  <SignalDesign Name="GPIO6_IO07" NativeInstance="gpio6" Instance="gpio6" InstanceAlias="gpio6" IsChecked="true">
-    <Comment>CAP_TCH_INT1</Comment>
-    <Routing padNet="padNet.NAND_CLE" mode="NAND_CLE_ALT5" ball="C15" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_CLE" Address="0x020E02D4" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_CLE" Address="0x020E06BC" Value="0x0001B0B0" />
-  </SignalDesign>
-  <SignalDesign Name="GPIO6_IO08" NativeInstance="gpio6" Instance="gpio6" InstanceAlias="gpio6" IsChecked="true">
-    <Comment>CAP_TCH_INT0</Comment>
-    <Routing padNet="padNet.NAND_ALE" mode="NAND_ALE_ALT5" ball="A16" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_ALE" Address="0x020E02D8" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_ALE" Address="0x020E06C0" Value="0x0001B0B0" />
-  </SignalDesign>
-  <SignalDesign Name="GPIO6_IO09" NativeInstance="gpio6" Instance="gpio6" InstanceAlias="gpio6" IsChecked="true">
-    <Comment>DISP0_WR</Comment>
-    <Routing padNet="padNet.NAND_WP_B" mode="NAND_WP_B_ALT5" ball="E15" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_WP_B" Address="0x020E02DC" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_WP_B" Address="0x020E06C4" Value="0x0001B0B0" />
-  </SignalDesign>
-  <SignalDesign Name="GPIO6_IO10" NativeInstance="gpio6" Instance="gpio6" InstanceAlias="gpio6" IsChecked="true">
-    <Comment>AUX_5V_EN</Comment>
-    <Routing padNet="padNet.NAND_READY" mode="NAND_READY_ALT5" ball="B16" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_READY" Address="0x020E02E0" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_READY" Address="0x020E06C8" Value="0x0001B0B0" />
-  </SignalDesign>
-  <SignalDesign Name="GPIO6_IO11" NativeInstance="gpio6" Instance="gpio6" InstanceAlias="gpio6" IsChecked="true">
-    <Comment>DISP0_RST_B</Comment>
-    <Routing padNet="padNet.NAND_CS0_B" mode="NAND_CS0_B_ALT5" ball="F15" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_CS0_B" Address="0x020E02E4" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_CS0_B" Address="0x020E06CC" Value="0x0001B0B0" />
-  </SignalDesign>
-  <SignalDesign Name="GPIO6_IO14" NativeInstance="gpio6" Instance="gpio6" InstanceAlias="gpio6" IsChecked="true">
-    <Comment>DISP0_PWR_EN</Comment>
-    <Routing padNet="padNet.NAND_CS1_B" mode="NAND_CS1_B_ALT5" ball="C16" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_CS1_B" Address="0x020E02E8" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_CS1_B" Address="0x020E06D0" Value="0x0001B0B0" />
-  </SignalDesign>
-  <SignalDesign Name="GPIO6_IO15" NativeInstance="gpio6" Instance="gpio6" InstanceAlias="gpio6" IsChecked="true">
-    <Comment>CABC_EN0</Comment>
-    <Routing padNet="padNet.NAND_CS2_B" mode="NAND_CS2_B_ALT5" ball="A17" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_CS2_B" Address="0x020E02EC" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_CS2_B" Address="0x020E06D4" Value="0x0001B0B0" />
-  </SignalDesign>
-  <SignalDesign Name="GPIO6_IO16" NativeInstance="gpio6" Instance="gpio6" InstanceAlias="gpio6" IsChecked="true">
-    <Comment>CABC_EN1</Comment>
-    <Routing padNet="padNet.NAND_CS3_B" mode="NAND_CS3_B_ALT5" ball="D16" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_CS3_B" Address="0x020E02F0" Value="0x00000005" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_CS3_B" Address="0x020E06D8" Value="0x0001B0B0" />
-  </SignalDesign>
   <SignalDesign Name="GPIO6_IO31" NativeInstance="gpio6" Instance="gpio6" InstanceAlias="gpio6" IsChecked="true">
     <Comment>DI0_D1_CS</Comment>
     <Routing padNet="padNet.EIM_BCLK" mode="EIM_BCLK_ALT5" ball="N22" />
@@ -516,26 +447,127 @@ I2C3_SDA	      GPIO_16 (R2)		i2c3.SDA (ALT6)	GPIO6 (T3)		i2c3.SDA (ALT2) (InputS
     <Register Name="IOMUXC_SW_MUX_CTL_PAD_GPIO18" Address="0x020E0250" Value="0x00000005" />
     <Register Name="IOMUXC_SW_PAD_CTL_PAD_GPIO18" Address="0x020E0620" Value="0x0001B0B0" />
   </SignalDesign>
-  <SignalDesign Name="HDMI_TX_CEC_LINE" NativeInstance="hdmi" Instance="hdmi" InstanceAlias="hdmi" IsChecked="true">
+  <SignalDesign Name="NAND_ALE" NativeInstance="gpmi" Instance="gpmi" InstanceAlias="gpmi" IsChecked="true">
     <Comment />
-    <Routing padNet="padNet.EIM_ADDR25" mode="EIM_ADDR25_ALT6" ball="H19" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_ADDR25" Address="0x020E0088" Value="0x00000006" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_ADDR25" Address="0x020E039C" Value="0x0000B0B1" />
-    <Register Name="IOMUXC_HDMI_ICECIN_SELECT_INPUT" Address="0x020E088C" Value="0x00000000" />
+    <Routing padNet="padNet.NAND_ALE" mode="NAND_ALE_ALT0" ball="A16" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_ALE" Address="0x020E02D8" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_ALE" Address="0x020E06C0" Value="0x0001B0B0" />
+  </SignalDesign>
+  <SignalDesign Name="NAND_CE0_B" NativeInstance="gpmi" Instance="gpmi" InstanceAlias="gpmi" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.NAND_CS0_B" mode="NAND_CS0_B_ALT0" ball="F15" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_CS0_B" Address="0x020E02E4" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_CS0_B" Address="0x020E06CC" Value="0x0001B0B0" />
+  </SignalDesign>
+  <SignalDesign Name="NAND_CE1_B" NativeInstance="gpmi" Instance="gpmi" InstanceAlias="gpmi" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.NAND_CS1_B" mode="NAND_CS1_B_ALT0" ball="C16" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_CS1_B" Address="0x020E02E8" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_CS1_B" Address="0x020E06D0" Value="0x0001B0B0" />
+  </SignalDesign>
+  <SignalDesign Name="NAND_CE2_B" NativeInstance="gpmi" Instance="gpmi" InstanceAlias="gpmi" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.NAND_CS2_B" mode="NAND_CS2_B_ALT0" ball="A17" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_CS2_B" Address="0x020E02EC" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_CS2_B" Address="0x020E06D4" Value="0x0001B0B0" />
+  </SignalDesign>
+  <SignalDesign Name="NAND_CE3_B" NativeInstance="gpmi" Instance="gpmi" InstanceAlias="gpmi" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.NAND_CS3_B" mode="NAND_CS3_B_ALT0" ball="D16" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_CS3_B" Address="0x020E02F0" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_CS3_B" Address="0x020E06D8" Value="0x0001B0B0" />
+  </SignalDesign>
+  <SignalDesign Name="NAND_CLE" NativeInstance="gpmi" Instance="gpmi" InstanceAlias="gpmi" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.NAND_CLE" mode="NAND_CLE_ALT0" ball="C15" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_CLE" Address="0x020E02D4" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_CLE" Address="0x020E06BC" Value="0x0001B0B0" />
+  </SignalDesign>
+  <SignalDesign Name="NAND_DATA00" NativeInstance="gpmi" Instance="gpmi" InstanceAlias="gpmi" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.NAND_DATA00" mode="NAND_DATA00_ALT0" ball="A18" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_DATA00" Address="0x020E02FC" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_DATA00" Address="0x020E06E4" Value="0x0001B0B0" />
+  </SignalDesign>
+  <SignalDesign Name="NAND_DATA01" NativeInstance="gpmi" Instance="gpmi" InstanceAlias="gpmi" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.NAND_DATA01" mode="NAND_DATA01_ALT0" ball="C17" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_DATA01" Address="0x020E0300" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_DATA01" Address="0x020E06E8" Value="0x0001B0B0" />
+  </SignalDesign>
+  <SignalDesign Name="NAND_DATA02" NativeInstance="gpmi" Instance="gpmi" InstanceAlias="gpmi" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.NAND_DATA02" mode="NAND_DATA02_ALT0" ball="F16" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_DATA02" Address="0x020E0304" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_DATA02" Address="0x020E06EC" Value="0x0001B0B0" />
+  </SignalDesign>
+  <SignalDesign Name="NAND_DATA03" NativeInstance="gpmi" Instance="gpmi" InstanceAlias="gpmi" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.NAND_DATA03" mode="NAND_DATA03_ALT0" ball="D17" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_DATA03" Address="0x020E0308" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_DATA03" Address="0x020E06F0" Value="0x0001B0B0" />
+  </SignalDesign>
+  <SignalDesign Name="NAND_DATA04" NativeInstance="gpmi" Instance="gpmi" InstanceAlias="gpmi" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.NAND_DATA04" mode="NAND_DATA04_ALT0" ball="A19" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_DATA04" Address="0x020E030C" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_DATA04" Address="0x020E06F4" Value="0x0001B0B0" />
+  </SignalDesign>
+  <SignalDesign Name="NAND_DATA05" NativeInstance="gpmi" Instance="gpmi" InstanceAlias="gpmi" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.NAND_DATA05" mode="NAND_DATA05_ALT0" ball="B18" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_DATA05" Address="0x020E0310" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_DATA05" Address="0x020E06F8" Value="0x0001B0B0" />
+  </SignalDesign>
+  <SignalDesign Name="NAND_DATA06" NativeInstance="gpmi" Instance="gpmi" InstanceAlias="gpmi" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.NAND_DATA06" mode="NAND_DATA06_ALT0" ball="E17" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_DATA06" Address="0x020E0314" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_DATA06" Address="0x020E06FC" Value="0x0001B0B0" />
+  </SignalDesign>
+  <SignalDesign Name="NAND_DATA07" NativeInstance="gpmi" Instance="gpmi" InstanceAlias="gpmi" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.NAND_DATA07" mode="NAND_DATA07_ALT0" ball="C18" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_DATA07" Address="0x020E0318" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_DATA07" Address="0x020E0700" Value="0x0001B0B0" />
+  </SignalDesign>
+  <SignalDesign Name="NAND_READY" NativeInstance="gpmi" Instance="gpmi" InstanceAlias="gpmi" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.NAND_READY" mode="NAND_READY_ALT0" ball="B16" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_READY" Address="0x020E02E0" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_READY" Address="0x020E06C8" Value="0x0001B0B0" />
+  </SignalDesign>
+  <SignalDesign Name="NAND_RE_B" NativeInstance="gpmi" Instance="gpmi" InstanceAlias="gpmi" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.SD4_CMD" mode="SD4_CMD_ALT1" ball="B17" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_SD4_CMD" Address="0x020E02F4" Value="0x00000001" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_SD4_CMD" Address="0x020E06DC" Value="0x0001B0B0" />
+  </SignalDesign>
+  <SignalDesign Name="NAND_WE_B" NativeInstance="gpmi" Instance="gpmi" InstanceAlias="gpmi" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.SD4_CLK" mode="SD4_CLK_ALT1" ball="E16" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_SD4_CLK" Address="0x020E02F8" Value="0x00000001" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_SD4_CLK" Address="0x020E06E0" Value="0x0001B0B0" />
+  </SignalDesign>
+  <SignalDesign Name="NAND_WP_B" NativeInstance="gpmi" Instance="gpmi" InstanceAlias="gpmi" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.NAND_WP_B" mode="NAND_WP_B_ALT0" ball="E15" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_NAND_WP_B" Address="0x020E02DC" Value="0x00000000" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_NAND_WP_B" Address="0x020E06C4" Value="0x0001B0B0" />
   </SignalDesign>
   <SignalDesign Name="I2C1_SCL" NativeInstance="i2c1" Instance="i2c1" InstanceAlias="i2c1" IsChecked="true">
     <Comment />
-    <Routing padNet="padNet.CSI0_DATA09" mode="CSI0_DATA09_ALT4" ball="N5" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_CSI0_DATA09" Address="0x020E027C" Value="0x00000014" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_CSI0_DATA09" Address="0x020E064C" Value="0x0001B0B0" />
-    <Register Name="IOMUXC_I2C1_SCL_IN_SELECT_INPUT" Address="0x020E0898" Value="0x00000001" />
+    <Routing padNet="padNet.EIM_DATA21" mode="EIM_DATA21_ALT6" ball="H20" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_DATA21" Address="0x020E00A4" Value="0x00000006" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_DATA21" Address="0x020E03B8" Value="0x0001B0B0" />
+    <Register Name="IOMUXC_I2C1_SCL_IN_SELECT_INPUT" Address="0x020E0898" Value="0x00000000" />
   </SignalDesign>
   <SignalDesign Name="I2C1_SDA" NativeInstance="i2c1" Instance="i2c1" InstanceAlias="i2c1" IsChecked="true">
     <Comment />
-    <Routing padNet="padNet.CSI0_DATA08" mode="CSI0_DATA08_ALT4" ball="N6" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_CSI0_DATA08" Address="0x020E0278" Value="0x00000014" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_CSI0_DATA08" Address="0x020E0648" Value="0x0001B0B0" />
-    <Register Name="IOMUXC_I2C1_SDA_IN_SELECT_INPUT" Address="0x020E089C" Value="0x00000001" />
+    <Routing padNet="padNet.EIM_DATA28" mode="EIM_DATA28_ALT1" ball="G23" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_DATA28" Address="0x020E00C4" Value="0x00000001" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_DATA28" Address="0x020E03D8" Value="0x0001B0B0" />
+    <Register Name="IOMUXC_I2C1_SDA_IN_SELECT_INPUT" Address="0x020E089C" Value="0x00000000" />
   </SignalDesign>
   <SignalDesign Name="I2C2_SCL" NativeInstance="i2c2" Instance="i2c2" InstanceAlias="i2c2" IsChecked="true">
     <Comment />
@@ -1912,6 +1944,34 @@ I2C3_SDA	      GPIO_16 (R2)		i2c3.SDA (ALT6)	GPIO6 (T3)		i2c3.SDA (ALT2) (InputS
     <Register Name="IOMUXC_SW_PAD_CTL_PAD_CSI0_DATA10" Address="0x020E0650" Value="0x0001B0B0" />
     <Register Name="IOMUXC_UART1_UART_RX_DATA_SELECT_INPUT" Address="0x020E0920" Value="0x00000001" />
   </SignalDesign>
+  <SignalDesign Name="UART2_CTS_B" NativeInstance="uart2" Instance="uart2" InstanceAlias="uart2" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.SD4_DATA6" mode="SD4_DATA6_ALT2" ball="B20" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_SD4_DATA6" Address="0x020E0334" Value="0x00000002" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_SD4_DATA6" Address="0x020E071C" Value="0x0001B0B0" />
+    <Register Name="IOMUXC_UART2_UART_RTS_B_SELECT_INPUT" Address="0x020E0924" Value="0x00000000" />
+  </SignalDesign>
+  <SignalDesign Name="UART2_RTS_B" NativeInstance="uart2" Instance="uart2" InstanceAlias="uart2" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.SD4_DATA5" mode="SD4_DATA5_ALT2" ball="C19" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_SD4_DATA5" Address="0x020E0330" Value="0x00000002" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_SD4_DATA5" Address="0x020E0718" Value="0x0001B0B0" />
+    <Register Name="IOMUXC_UART2_UART_RTS_B_SELECT_INPUT" Address="0x020E0924" Value="0x00000000" />
+  </SignalDesign>
+  <SignalDesign Name="UART2_RX_DATA" NativeInstance="uart2" Instance="uart2" InstanceAlias="uart2" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.SD4_DATA4" mode="SD4_DATA4_ALT2" ball="E18" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_SD4_DATA4" Address="0x020E032C" Value="0x00000002" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_SD4_DATA4" Address="0x020E0714" Value="0x0001B0B0" />
+    <Register Name="IOMUXC_UART2_UART_RX_DATA_SELECT_INPUT" Address="0x020E0928" Value="0x00000000" />
+  </SignalDesign>
+  <SignalDesign Name="UART2_TX_DATA" NativeInstance="uart2" Instance="uart2" InstanceAlias="uart2" IsChecked="true">
+    <Comment />
+    <Routing padNet="padNet.SD4_DATA7" mode="SD4_DATA7_ALT2" ball="D19" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_SD4_DATA7" Address="0x020E0338" Value="0x00000002" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_SD4_DATA7" Address="0x020E0720" Value="0x0001B0B0" />
+    <Register Name="IOMUXC_UART2_UART_RX_DATA_SELECT_INPUT" Address="0x020E0928" Value="0x00000000" />
+  </SignalDesign>
   <SignalDesign Name="UART3_CTS_B" NativeInstance="uart3" Instance="uart3" InstanceAlias="uart3" IsChecked="true">
     <Comment />
     <Routing padNet="padNet.EIM_DATA23" mode="EIM_DATA23_ALT2" ball="D25" />
@@ -1939,12 +1999,11 @@ I2C3_SDA	      GPIO_16 (R2)		i2c3.SDA (ALT6)	GPIO6 (T3)		i2c3.SDA (ALT2) (InputS
     <Register Name="IOMUXC_SW_MUX_CTL_PAD_GPIO01" Address="0x020E0224" Value="0x00000003" />
     <Register Name="IOMUXC_SW_PAD_CTL_PAD_GPIO01" Address="0x020E05F4" Value="0x0001B0B0" />
   </SignalDesign>
-  <SignalDesign Name="USB_OTG_OC" NativeInstance="usb" Instance="usb" InstanceAlias="usb" IsChecked="true">
+  <SignalDesign Name="USB_OTG_PWR" NativeInstance="usb" Instance="usb" InstanceAlias="usb" IsChecked="true">
     <Comment />
-    <Routing padNet="padNet.EIM_DATA21" mode="EIM_DATA21_ALT4" ball="H20" />
-    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_DATA21" Address="0x020E00A4" Value="0x00000004" />
-    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_DATA21" Address="0x020E03B8" Value="0x0001B0B0" />
-    <Register Name="IOMUXC_USB_OTG_OC_SELECT_INPUT" Address="0x020E0944" Value="0x00000000" />
+    <Routing padNet="padNet.EIM_DATA22" mode="EIM_DATA22_ALT4" ball="E23" />
+    <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_DATA22" Address="0x020E00A8" Value="0x00000004" />
+    <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_DATA22" Address="0x020E03BC" Value="0x0001B0B0" />
   </SignalDesign>
   <SignalDesign Name="SD1_CLK" NativeInstance="usdhc1" Instance="usdhc1" InstanceAlias="usdhc1" IsChecked="true">
     <Comment />
@@ -2090,7 +2149,7 @@ I2C3_SDA	      GPIO_16 (R2)		i2c3.SDA (ALT6)	GPIO6 (T3)		i2c3.SDA (ALT2) (InputS
     <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_AD00" Address="0x020E0114" Value="0x00000005" />
     <Register Name="IOMUXC_SW_PAD_CTL_PAD_EIM_AD00" Address="0x020E0428" Value="0x0000B0B1" />
   </SignalDesign>
-  <SignalDesign Name="GPIO3_IO18" Alias="GPS_PPS" NativeInstance="gpio3" Instance="NewModule" InstanceAlias="gps" IsChecked="true">
+  <SignalDesign Name="GPIO3_IO18" Alias="GPS_PPS" NativeInstance="gpio3" Instance="NewModule" InstanceAlias="gps" IsChecked="false">
     <Comment>WAS Instance:gpio3 Signal:GPIO[18]</Comment>
     <Routing padNet="padNet.EIM_DATA18" mode="EIM_DATA18_ALT5" ball="D24" />
     <Register Name="IOMUXC_SW_MUX_CTL_PAD_EIM_DATA18" Address="0x020E0098" Value="0x00000005" />
